@@ -57,6 +57,10 @@ void mergeSort(int array[], int low, int mid, int high) {
     for(k = low; k <= high; k++) {
          array[k] = temp[k];
     }
+
+    if(temp == NULL) {
+      return;
+    }
 }
   
 void bubble(int array[], int length) {
