@@ -7,6 +7,7 @@ O(n**2) Sorts v1 */
 #include <stdio.h>
 #define MAX 25
 
+// This swap function is implemented in the bubble and insertion sort.
 void swap(int A[], int i, int j) {
   int temp;
   temp = A[i];
@@ -14,6 +15,7 @@ void swap(int A[], int i, int j) {
   A[j] = temp;
 }
 
+// mergeSort works exclusively for the merge sort as indicated by its name.
 void mergeSort(int array[], int low, int mid, int high) {
   int i;
   int m;
@@ -60,7 +62,7 @@ void mergeSort(int array[], int low, int mid, int high) {
 void bubble(int array[], int length) {
   int i;
   int swapped;
-  do {
+  do { //do serves to check that the array has been iterated through the appropriate amount of time and ordered.
     swapped = 0;
   for(i = 0; i < length - 1; i++) {
     if (array[i] > array[i+1]) {
@@ -120,7 +122,7 @@ int main(int argc, char *argv[]) {
     sscanf(argv[i+2], "%d", &n[i]);
   }
 
-
+  // this if statement checks to see what function I am calling in the second element of user input on the command line. 
   if(argv[1][0] == 'm') {
     merge(n, beginning, length - 1);
   }
