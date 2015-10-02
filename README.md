@@ -4,7 +4,9 @@ First coding assignment of the quarter where I have created algorithms for bubbl
 
 The star emoji represents completed code.
 
-All that is left is to create tests and split functions into different files.
+All that is left is to create tests.
+
+Files separated :heavy_check_mark:
 
 ## Bubble Sort
 Bubble sort is a simple, sorting algorithm that iterates through a list to be sorted, comparing each pair adjacent to each other and swaps them if they are in the wrong order. The iteration through the list is repeated until all the numbers have been listed according to the algorithm. :star2:
