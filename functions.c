@@ -9,54 +9,6 @@ void swap(int A[], int i, int j) {
   A[j] = temp;
 }
 
-// mergeSort works exclusively for the merge sort as indicated by its name.
-void mergeSort(int array[], int low, int mid, int high) {
-  int i;
-  int m;
-  int k;
-  int l;
-  int temp[MAX];
-
-    l = low;
-    i = low;
-    m = mid + 1;
-
-    while((l <= mid) && (m <= high)) {
-
-         if(array[l] <= array[m]) {
-             temp[i] = array[l];
-             l++;
-         }
-         else{
-             temp[i] = array[m];
-             m++;
-         }
-         i++;
-    }
-
-    if(l > mid) {
-         for(k = m; k <= high; k++) {
-             temp[i] = array[k];
-             i++;
-         }
-    }
-    
-    else {
-         for(k = l; k <= mid; k++) {
-             temp[i] = array[k];
-             i++;
-         }
-    }
-   
-    for(k = low; k <= high; k++) {
-         array[k] = temp[k];
-    }
-
-    if(temp == NULL) {
-      return;
-    }
-}
-  
 void bubble(int array[], int length) {
   int i;
   int swapped;
@@ -91,13 +43,25 @@ void insertion(int array[], int length) {
   while(swapped);
 }
 
-void merge(int array[], int low, int high) {
-  int mid;
+void selection(int array[], int length) {
+  int swapped;
+  int i;
+  int j;
+  int min;
 
-  if(low < high) {
-    mid = (low + high) / 2;
-    merge(array, low, mid);
-    merge(array, mid + 1, high);
-    mergeSort(array, low, mid, high);
+  do {
+    swapped = 0;
+    for(j = 0; j < length - 1; j++) {
+      min = j;
+      for(i = j + 1; i < length; i++) {
+	if(array[i] < array[min]) {
+	      min = i;
+	}
+      }
+      if(min != j) {
+	swap(array, j, min);
+      }
+    }
   }
+  while(swapped);
 }

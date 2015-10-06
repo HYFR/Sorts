@@ -28,8 +28,8 @@ int main(int argc, char *argv[]) {
   }
 
   // this if statement checks to see what function I am calling in the second element of user input on the command line. 
-  if(argv[1][0] == 'm') {
-    merge(n, beginning, length - 1);
+  if(argv[1][0] == 's') {
+    selection(n, length);
   }
   else if(argv[1][0] == 'i') {
     insertion(n, length);
