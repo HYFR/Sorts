@@ -38,7 +38,7 @@ int main(int argc, char *argv[]) {
     bubble(n, length);
   }
   else {
-    printf("Type one of three required words: merge, insertion, or bubble\n");
+    printf("Type one of three required words: selection, insertion, or bubble\n");
     return;
   }
   
