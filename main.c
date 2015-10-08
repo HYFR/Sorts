@@ -5,7 +5,7 @@ CS 232
 O(n**2) Sorts v1 */
 
 #include <stdio.h>
-#include "functions.h"
+#include "functions.c"
 
 #define MAX 25
 

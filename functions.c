@@ -65,3 +65,15 @@ void selection(int array[], int length) {
   }
   while(swapped);
 }
+
+int match(int first[], int second[]) {
+  int i;
+  int length = (sizeof(first) / sizeof(first[0]));
+
+  for(i = 0; i < length; i++) {
+    if(first[i] != second[i]) {
+      return 0;
+    }
+  }
+  return 1;
+}
