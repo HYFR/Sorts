@@ -27,9 +27,11 @@ make main
 Now you can call the function of your choosing. e.g.
 ```
 ./main bubble 4 3 2 1
+./main insertion 4 3 2 1
+./main selection 4 3 2 1
 ```
 
-will print 
+any of the three will print 
 
 ```
 Sorted list in ascending order:
