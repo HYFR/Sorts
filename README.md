@@ -1,4 +1,4 @@
-# O(n**2) Sorts v2
+# O(n**2) Sorts Final
 
 First coding assignment of the quarter where I have created algorithms for bubble, insertion and select sorts.
 
@@ -63,5 +63,6 @@ Odd length array works (insertion).
 Negative, odd numbered array works (insertion).
 Insertion sort works.
 ```
+on the terminal.
 
 
