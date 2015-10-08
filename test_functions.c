@@ -58,7 +58,7 @@ int main() {
 
   selection(s3, length6);
   assert(match(s3, s4) == 1);
-  printf("Even length array works (selection).\n");
+  printf("Odd length array works (selection).\n");
 
   int s5[3] = {-3, -5134, -143};
   int s6[3] = {-5134, -143, -3};

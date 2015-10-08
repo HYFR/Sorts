@@ -18,7 +18,7 @@ Insertion sort is a simple, sorting algorthim that builds the final sorted array
 The selection sort algorithm divies input into two subsets. The algorithm finds the smallest element in the unsorted subset and swaps it with the leftmost unsorted element, while moving to the right, until the list is sorted. This process continues until both subsets are sorted. :star2:
 
 ## Setup
-First, compile the program by making main.
+First, compile the program by making main on the command line.
 
 ```
 make main
@@ -37,3 +37,31 @@ any of the three will print
 Sorted list in ascending order:
 1 2 3 4
 ```
+## Test Setup
+First, compile the unit tests by making test on the command line.
+```
+make test
+```
+
+Once you compile the unit test, the test functions will run automatically and display
+
+```
+./test_functions
+
+Even length array works (bubble).
+Odd length array works (bubble).
+Negative, odd numbered array works (bubble).
+Bubble sort works.
+
+Even length array works (selection).
+Odd length array works (selection).
+Negative, odd numbered array works (selection).
+Selection sort works.
+
+Even length array works (insertion).
+Odd length array works (insertion).
+Negative, odd numbered array works (insertion).
+Insertion sort works.
+```
+
+
