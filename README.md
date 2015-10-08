@@ -20,18 +20,18 @@ The selection sort algorithm divies input into two subsets. The algorithm finds 
 ## Setup
 First, compile the program by making main.
 
-'''
+```
 make main
-'''
+```
 
 Now you can call the function of your choosing. e.g.
-'''
+```
 ./main bubble 4 3 2 1
-'''
+```
 
 will print 
 
-'''
+```
 Sorted list in ascending order:
 1 2 3 4
-'''
+```
