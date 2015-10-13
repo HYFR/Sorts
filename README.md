@@ -21,7 +21,7 @@ The selection sort algorithm divies input into two subsets. The algorithm finds 
 First, compile the program by making main on the command line.
 
 ```
-make main
+make
 ```
 
 Now you can call the function of your choosing. e.g.
